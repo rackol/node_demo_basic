@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a href="/addCat">Add a Cat</a>
+<br>
+Your cats:
+<br>
+<table>
+
+<% for(var i = 0; i<cats.length;i++) { %>
+  <tr>
+    <td><%= cats[i].name %></td>
+    <td><%= cats[i].breed %></td>
+    <td><%= cats[i].age %></td>
+    <td><img src=<%=cats[i].image%> width=300></td>
+  </tr>
+<% } %>
+
+</table>
+
+</body>
+
+
+</html>
